@@ -1,0 +1,42 @@
+
+1 sudo docker ps -a     ----> List all the container with details
+
+2 sudo docker ps -a -q  ----> list only container id'
+
+3 sudo docker rm $(sudo docker ps -a -q)  ----> remove all container at once
+
+4 sudo docker images -a   ------> List all the docker images with details
+
+5 sudo docker images -a -q  ------> List only image id
+
+6 sudo docker rmi $(sudo docker images -a -q)  -----> remove all the images at once
+
+7 sudo docker exec '<container id>' '<command>'  -----> execute the command inside container
+
+8 sudo docker exec -it '<container id>' bash   ------> open the bash terminal inside container
+
+9 sudo docker inspect '<container id>'  -------> gives all the details of container in the form of JSON
+
+10 sudo docker history '<image id.'  ------> gives the history about the image
+
+11 sudo docker start '<container id>'  --------> starts the container
+
+12 sudo docker stop '<container id>'  ------------> stop a container
+
+13 sudo docker pull '<image name>'  ------------- > pull a image from docker repository
+
+14 sudo docker build -t '<tag name>' . -----------> build a container from docker file
+
+15 sudo docker run -it -p '<port:port>' '<container id>'  -----> run a container with port mapping and current terminal opened
+
+16 sudo docker run -d '<container id>' ---------> run a container in background
+
+17 sudo docker attach '<container id>' ------> get the container back in fore ground
+
+18 sudo docker --version -----> check docker version installed in the system
+
+19 sudo docker create '<image name>'  ------> create container only from image
+
+20 sudo docker logs '<container id '  -----------> get logs for container
+
+
