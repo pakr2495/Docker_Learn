@@ -17,7 +17,7 @@
 
 9 sudo docker inspect '<container id>'  -------> gives all the details of container in the form of JSON
 
-10 sudo docker history '<image id.'  ------> gives the history about the image
+10 sudo docker history '<image id>'  ------> gives the history about the image
 
 11 sudo docker start '<container id>'  --------> starts the container
 
