@@ -39,4 +39,10 @@
 
 20 sudo docker logs '<container id '  -----------> get logs for container
 
+21 sudo docker volume create my-vol  --------->create a volume
 
+22 sudo docker volume ls --------------> list all volumes
+
+23 sudo docker volume inspect my-vol --->details about volume
+
+24 sudo docker run -d --name demo --mount source=myvol2,target=/app nginx:latest - run container with volume
