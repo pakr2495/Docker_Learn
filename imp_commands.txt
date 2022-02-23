@@ -1,8 +1,9 @@
 
-1 sudo docker ps -a     ----> List all the container with details
+1 sudo docker ps -a      ----> List all the container with details
 
-2 sudo docker ps -a -q  ----> list only container id'
-
+2 sudo docker ps -a -q   ----> list only container id'
+  sudo docker ps -aq
+  
 3 sudo docker rm $(sudo docker ps -a -q)  ----> remove all container at once
 
 4 sudo docker images -a   ------> List all the docker images with details
@@ -28,10 +29,11 @@
 14 sudo docker build -t '<tag name>' . -----------> build a container from docker file
 
 15 sudo docker run -it -p '<port:port>' '<container id>'  -----> run a container with port mapping and current terminal opened
-
+   sudo docker run -it -P '<container id>'  ----> dynamic port assignment
+   
 16 sudo docker run -d '<container id>' ---------> run a container in background
 
-17 sudo docker attach '<container id>' ------> get the container back in fore ground
+17 sudo docker attach '<container id>' ------> get the container back in fore ground . Attach to the existing input or output terminal of a running container.
 
 18 sudo docker --version -----> check docker version installed in the system
 
@@ -46,3 +48,8 @@
 23 sudo docker volume inspect my-vol --->details about volume
 
 24 sudo docker run -d --name demo --mount source=myvol2,target=/app nginx:latest - run container with volume
+
+25 sudo docker push '<acountname/repositoryname:tagname>' ---> push image to docker hub
+
+26 sudo docker ps -al ---> detials of the latest conatiner created
+
