@@ -53,3 +53,12 @@
 
 26 sudo docker ps -al ---> detials of the latest conatiner created
 
+27 sudo docker inspect --format '{{.Name}} {{.State.Running}}' '<conatiner ID>' ----> get the detials in the required format 
+
+28 sudo docker kill <container id> --- kill the conatiner 
+
+29 sudo docker login -- login into your repository
+
+30 sudo docker logout -- logout from repository
+
+31 sudo docker network ls -- lists all the network
